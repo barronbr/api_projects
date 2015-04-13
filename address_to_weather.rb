@@ -15,6 +15,9 @@ url_safe_street_address = URI.encode(street_address)
 
 # Your code goes below.
 
+raw_data = open(url_of_data_we_want).read
+parsed_data = JSON.parse(raw_data)
+
 # Ultimately, we want the following line to work when uncommented:
 
 # puts "The current temperature at #{street_address} is #{the_temperature} degrees."
